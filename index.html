@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hard Drive Capacity Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://drive.google.com/uc?id=1yalbQrHYFghWL1qmNBb2tP495gBvrk7g">
+</head>
+<body>
+  <div class="calculator">
+    <h1> True Storage </h1>
+    <p>Welcome to the Hard Drive Capacity Calculator! This tool helps you estimate the usable storage capacity of your hard drive.</p>
+    
+    <div class="input-group">
+      <label for="driveSize">Enter Hard Drive Size (e.g., 1TB, 500GB):</label>
+      <input type="number" id="driveSize" placeholder="Enter size in GB">
+      <select id="unit">
+        <option value="GB">GB</option>
+        <option value="TB">TB</option>
+      </select>
+    </div>
+
+    <button onclick="calculateCapacity()">Calculate</button>
+
+    <div class="result">
+      <h2>Estimated Usable Capacity:</h2>
+      <p id="usableCapacity">0 GB</p>
+    </div>
+
+    <div class="notes">
+      <p><strong>Notes:</strong></p>
+      <ul>
+        <li>The calculator accounts for the difference between binary and decimal measurements.</li>
+        <li>Actual usable capacity may vary based on the file system and other factors.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://drive.google.com/uc?id=11qjwvtktiva0ah-QnDpWuGnUH-oKeWOB"></script>
+</body>
+</html>
